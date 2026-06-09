@@ -1,0 +1,30 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "projects"
+    label: "Projects"
+    files:
+      - name: "projects"
+        label: "All Projects"
+        file: "content/projects.json"
+        description: "Manage all projects listed on the website"
+        fields:
+          - label: "Projects"
+            name: "list"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - label: "Photos"
+                name: "photos"
+                widget: "list"
+                required: false
+                field: { label: "Photo", name: "photo", widget: "image" }
+              - { label: "Description", name: "description", widget: "text", required: false }
+              - { label: "Value (INR)", name: "value", widget: "string", required: false }
+              - { label: "Status", name: "status", widget: "select", options: ["Completed", "Ongoing", "Upcoming"], default: "Completed" }

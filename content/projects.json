@@ -1,0 +1,68 @@
+{
+  "list": [
+    {
+      "title": "Uppal Skywalk",
+      "location": "Uppal, Hyderabad, Telangana",
+      "photos": [
+        { "photo": "/images/Uppal skywalk.jpg" }
+      ],
+      "description": "Hyderabad's iconic pedestrian skywalk — steel & RCC composite structure with covered walkway, lighting, and railings. Enhanced pedestrian safety at one of Hyderabad's busiest junctions.",
+      "value": "",
+      "status": "Completed"
+    },
+    {
+      "title": "Obedullaganj-Betul Highway",
+      "location": "Madhya Pradesh",
+      "photos": [
+        { "photo": "/images/NH69.png" }
+      ],
+      "description": "Four laning of 121 km highway under BOT model. INR 870 Cr project executed under FIDIC & IRC standards.",
+      "value": "870 Cr",
+      "status": "Completed"
+    },
+    {
+      "title": "Nelamangala-Devihalli Expressway",
+      "location": "Karnataka",
+      "photos": [
+        { "photo": "/images/NH48.png" }
+      ],
+      "description": "BOT expressway project in Karnataka. INR 550 Cr four-laning project enhancing connectivity.",
+      "value": "550 Cr",
+      "status": "Completed"
+    },
+    {
+      "title": "Tirupathi-Chennai Highway",
+      "location": "Andhra Pradesh & Tamil Nadu",
+      "photos": [
+        { "photo": "/images/NH205.png" }
+      ],
+      "description": "DBFOT highway project connecting Andhra Pradesh and Tamil Nadu. INR 540 Cr project portfolio.",
+      "value": "540 Cr",
+      "status": "Completed"
+    },
+    {
+      "title": "Bhopal Bypass",
+      "location": "Madhya Pradesh",
+      "photos": [],
+      "description": "52 km four laning bypass under DBFOT model. INR 276 Cr project improving traffic flow around Bhopal.",
+      "value": "276 Cr",
+      "status": "Completed"
+    },
+    {
+      "title": "Cuddapah-Renigunta Highway (SH-31)",
+      "location": "Andhra Pradesh",
+      "photos": [],
+      "description": "125 km highway project funded by World Bank. INR 120 Cr project executed to international standards.",
+      "value": "120 Cr",
+      "status": "Completed"
+    },
+    {
+      "title": "275m RCC Chimney, Ukai",
+      "location": "Gujarat",
+      "photos": [],
+      "description": "Single flue RCC chimney of 275m height for BHEL/GSECL thermal power project in Ukai, Gujarat.",
+      "value": "",
+      "status": "Completed"
+    }
+  ]
+}
