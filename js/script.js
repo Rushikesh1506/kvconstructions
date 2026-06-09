@@ -1209,7 +1209,7 @@ document.addEventListener('DOMContentLoaded', function() {
       container.innerHTML = '';
       data.list.forEach(function(p, i) {
         var card = document.createElement('div');
-        card.className = 'p-card reveal';
+        card.className = 'p-card';
         card.setAttribute('data-index', i);
 
         var imgSrc = '';
@@ -1231,11 +1231,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         card.addEventListener('click', function() {
           var images = p.photos || [];
-          if (images.length > 0 && images[0].photo) {
-            openLightbox(images[0].photo, cardCaption);
-          } else {
-            openLightbox('', cardCaption);
+          var imgUrl = '';
+          if (images.length > 0) {
+            imgUrl = typeof images[0] === 'string' ? images[0] : (images[0].photo || '');
           }
+          openLightbox(imgUrl, cardCaption);
         });
 
         var body = document.createElement('div');
