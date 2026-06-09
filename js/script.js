@@ -1213,14 +1213,15 @@ document.addEventListener('DOMContentLoaded', function() {
         card.setAttribute('data-index', i);
 
         var imgSrc = '';
-        if (p.photos && p.photos.length > 0 && p.photos[0].photo) {
-          imgSrc = p.photos[0].photo;
+        if (p.photos && p.photos.length > 0) {
+          var raw = typeof p.photos[0] === 'string' ? p.photos[0] : p.photos[0].photo;
+          if (raw) imgSrc = raw;
         }
 
         var head = document.createElement('div');
         head.className = 'p-card-head';
         if (imgSrc) {
-          head.style.backgroundImage = 'url(' + imgSrc + ')';
+          head.style.backgroundImage = 'url("' + imgSrc + '")';
         } else {
           head.style.background = 'linear-gradient(135deg,' + (i % 2 === 0 ? '#1a1a2e,#b83b3b' : '#2c3e50,#34495e') + ')';
         }
